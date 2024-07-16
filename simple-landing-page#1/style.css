@@ -1,0 +1,192 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Georgia;
+}
+
+nav {
+  display: flex;
+  position: absolute;
+  margin-top: 2em;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 3.5em;
+  background-color: transparent;
+}
+
+nav h1 {
+  display: block;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  margin-left: 3.5em;
+  font-size: 2em;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+nav li {
+  list-style: none;
+}
+nav li a {
+  text-decoration: none;
+  color: white;
+  margin: 1em;
+}
+
+nav .btn-follow {
+  color: white;
+  font-size: 1.1em;
+  background-color: rgb(16, 100, 255);
+  margin: 0 2em 0 1em;
+  cursor: pointer;
+  padding: 0.4em;
+  border: none;
+  border-radius: 20px;
+}
+
+/* Akhir Navbar */
+
+/* Jumbotron */
+.jumbotron {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: transparent;
+  min-height: 100vh;
+}
+
+.jumbotron h4 {
+  font-size: 3.5em;
+  color: white;
+  font-weight: 100;
+}
+
+.ctr {
+  margin-top: 1.5em;
+}
+
+.jumbotron span {
+  font-weight: 800;
+}
+
+.jumbotron .work {
+  background-color: rgb(21, 114, 255);
+  color: white;
+  margin-top: 2.5em;
+  padding: 0.2em 0.6em;
+  border-radius: 20px;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+.card {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: -20%;
+  padding: 1em;
+  width: 60%;
+  border-radius: 2em;
+  min-height: 140px;
+  background-color: white;
+  box-shadow: 0 -2px 14px black;
+}
+.card .cd1 {
+  text-align: center;
+  width: 40%;
+}
+
+.card p {
+  color: gray;
+}
+
+.container {
+  min-height: 200vh;
+}
+
+.intro .img1 {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 220px;
+  object-fit: cover;
+}
+
+.intro .img2 {
+  object-fit: cover;
+  width: 550px;
+  margin: 0 40px 0 100px;
+  float: left;
+  height: 350px;
+  border-radius: 1em;
+}
+
+.panel h2 {
+  margin-top: 2px;
+  font-weight: 100;
+  font-size: 2.6em;
+  color: rgb(26, 24, 24);
+}
+
+.panel .p1 {
+  margin-top: 0.8em;
+}
+
+.panel span {
+  font-weight: 700;
+  color: black;
+}
+
+.panel .space1 {
+  margin-top: 0.8em;
+  color: gray;
+}
+
+.panel .space2 {
+  margin-top: 0.3em;
+  color: gray;
+}
+
+.space3 {
+  margin-top: 0.8em;
+}
+
+.panel button {
+  background-color: green;
+  padding: 0.6em;
+  border: none;
+  font-weight: 100;
+  color: white;
+  cursor: pointer;
+  border-radius: 1.2em;
+}
+
+.workingspace {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 700px;
+}
+
+.workingspace h6 {
+  font-size: 2em;
+  color: black;
+  font-family: Arial;
+  font-weight: 100;
+  font-style: italic;
+}
+
