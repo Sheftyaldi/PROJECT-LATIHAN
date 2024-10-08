@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary: #b6895b;
+  --bg: #010101;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/* Styling */
+
+.navbar {
+  width: 100%;
+  padding: 1rem 7%;
+  background-color: var(--bg);
+  border-bottom: 0.1rem solid #634a31;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.navbar .navbar-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.navbar-title span {
+  color: var(--primary);
+}
+
+.navbar .navbar-menu a {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-menu a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-menu a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+}
+
+.navbar .navbar-menu a:hover::after {
+  transform: scaleX(0.5);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-icon{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.navbar .navbar-icon a {
+  margin: 0 0.5rem;
+  color: #fff;
+}
+
+.navbar .navbar-icon a:hover {
+  color: var(--primary);
+}
+
+#navmenu {
+  display: none;
+}
+
+h1 span {
+  color: var(--primary);
+}
+
+/* Media Query */
+
+/* Laptop */
+
+@media (max-width: 1360px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #navmenu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-menu {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    height: 100vh;
+    width: 30rem;
+  }
+
+  .navbar .navbar-menu .active {
+    right: 0;
+  }
+}
+
+/* Mobile Phone */
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
