@@ -1,8 +1,11 @@
+const container = document.querySelector(".container");
 const pertanyaan = document.querySelector(".pertanyaan");
 const jawaban = document.querySelector(".input");
 const btn = document.querySelector(".button");
+const loaders = document.getElementById("loader");
 
 let init = 0;
+let userData = [];
 
 const botSay = (data) => {
   return [
@@ -11,7 +14,7 @@ const botSay = (data) => {
     `hahaha ${data.umur} sama dong, trusss hobby kamu apa?`,
     `serius?, aku juga suka ${data.hobby}. btw kamu kerja apa sekarang?`,
     `wah keren bisa kerja ${data.pekerjaan}. kalau begitu kita udahan dulu yaa percakapannya`,
-    `Terimah Kasih, saya senang berkenalan dengan anda!`
+    `Terimah Kasih, saya senang berkenalan dengan anda!`,
   ];
 };
 
@@ -19,37 +22,40 @@ pertanyaan.innerHTML = botSay("")[0];
 
 // Fungsi Fungsi
 function botStart() {
+  if (jawaban.value.length < 1) return alert("Anda belum mengisi inputan");
   init++;
   if (init === 1) {
-    setTimeout(() => pertanyaanSelanjutnya({ nama: jawaban.value }), 1200);
-    setTimeout(() => (jawaban.value = ""), 1300);
+    pertanyaanSelanjutnya({ nama: jawaban.value });
   } else if (init === 2) {
-    setTimeout(() => pertanyaanSelanjutnya({ umur: jawaban.value }), 1200);
-    setTimeout(() => (jawaban.value = ""), 1300);
+    pertanyaanSelanjutnya({ umur: jawaban.value });
   } else if (init === 3) {
-    setTimeout(() => pertanyaanSelanjutnya({ hobby: jawaban.value }), 1200);
-    setTimeout(() => (jawaban.value = ""), 1300);
+    pertanyaanSelanjutnya({ hobby: jawaban.value });
   } else if (init === 4) {
-    setTimeout(() => pertanyaanSelanjutnya({ pekerjaan: jawaban.value }), 1200);
-    setTimeout(() => (jawaban.value = ""), 1300);
+    pertanyaanSelanjutnya({ pekerjaan: jawaban.value });
   } else if (init === 5) {
-    botFinisihing();
+    pertanyaan.innerHTML = "Terima Kasih, senang bisa membantu anda!";
   } else {
     botEnd();
   }
 }
 
 function pertanyaanSelanjutnya(jawabanUser) {
-  pertanyaan.innerHTML = botSay(jawabanUser)[init];
-}
-
-function botFinisihing() {
-  pertanyaan.innerHTML = "Bot the End...";
-  pertanyaan.innerHTML = botSay("")[0];
-  jawaban.innerHTML = "";
+  console.log(userData);
+  loaders.style.display = "block";
+  container.style.filter = "blur(3px)";
+  setTimeout(() => {
+    pertanyaan.innerHTML = botSay(jawabanUser)[init];
+    container.style.filter = "none";
+    loaders.style.display = "none";
+  }, [1200]);
+  userData.push(jawaban.value);
+  jawaban.value = "";
 }
 
 function botEnd() {
   pertanyaan.innerHTML = "Bot the End....";
   jawaban.innerHTML = "";
+  setTimeout(() => {
+    pertanyaan.innerHTML = botSay("")[0];
+  }, 1500);
 }
