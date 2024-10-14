@@ -65,7 +65,7 @@ button {
   height: 100px;
   position: absolute;
   top: 50%;
-  right: 40%;
+  right: 50%;
   border-top: 10px solid blue;
   border-radius: 100%;
   animation: 1s spin infinite;
