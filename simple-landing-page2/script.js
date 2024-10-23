@@ -3,6 +3,7 @@
     const menu = document.getElementById('tbl');
 let non;
 const nilai = true;
+const hariPertama = 1;
 
     hamburger.addEventListener('click', function(){
         menu.classList.toggle('active')
