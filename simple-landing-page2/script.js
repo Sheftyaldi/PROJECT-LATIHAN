@@ -4,6 +4,7 @@
 let non;
 const nilai = true;
 const hariPertama = 1;
+const br = "";
 
     hamburger.addEventListener('click', function(){
         menu.classList.toggle('active')
