@@ -1,0 +1,20 @@
+{
+  "main": {
+    "name": "Sheftyaldi Rahman",
+    "description": "I am a programmer",
+    "image": "profilepic.jpg",
+    "github": "https://github.com/sheftyaldi",
+    "project": "https://github.com/sheftyaldi",
+    "bio": "Ini adalah section biografi aku",
+    "contactmessage": "Hello, there!",
+    "email": "asheftyaldia@gmail.com",
+    "phone": "877-1234-5678",
+    "address": {
+      "street": "Jl Margonda Raya",
+      "city": "Depok",
+      "state": "West Java",
+      "zip": "16024"
+    },
+    "resumedownload": "https://github.com/mutiarahmatun"
+  }
+}
