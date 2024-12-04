@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 class Contact extends Component {
   render() {
@@ -29,123 +29,119 @@ class Contact extends Component {
         </Fade>
 
         <div className="row">
-          <Slide left duration={1000}>
-            <div className="eight columns">
-              <form action="" method="post" id="contact">
-                <fieldset>
-                  <div>
-                    <label htmlFor="contactName">
-                      Name <span className="required">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      defaultValue=""
-                      size="35"
-                      id="contactName"
-                      name="contactName"
-                      onChange={this.handleChange}
-                    />
-                  </div>
+          <div className="eight columns">
+            <form action="" method="post" id="contact">
+              <fieldset>
+                <div>
+                  <label htmlFor="contactName">
+                    Name <span className="required">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    defaultValue=""
+                    size="35"
+                    id="contactName"
+                    name="contactName"
+                    onChange={this.handleChange}
+                  />
+                </div>
 
-                  <div>
-                    <label htmlFor="contactEmail">
-                      Email <span className="required">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      defaultValue=""
-                      size="35"
-                      id="contactEmail"
-                      name="contactEmail"
-                      onChange={this.handleChange}
-                    />
-                  </div>
+                <div>
+                  <label htmlFor="contactEmail">
+                    Email <span className="required">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    defaultValue=""
+                    size="35"
+                    id="contactEmail"
+                    name="contactEmail"
+                    onChange={this.handleChange}
+                  />
+                </div>
 
-                  <div>
-                    <label htmlFor="contactSubject">Subject</label>
-                    <input
-                      type="text"
-                      defaultValue=""
-                      size="35"
-                      id="contactSubject"
-                      name="contactSubject"
-                      onChange={this.handleChange}
-                    />
-                  </div>
+                <div>
+                  <label htmlFor="contactSubject">Subject</label>
+                  <input
+                    type="text"
+                    defaultValue=""
+                    size="35"
+                    id="contactSubject"
+                    name="contactSubject"
+                    onChange={this.handleChange}
+                  />
+                </div>
 
-                  <div>
-                    <label htmlFor="contactMessage">
-                      Message <span className="required">*</span>
-                    </label>
-                    <textarea
-                      cols="50"
-                      rows="15"
-                      id="contactMessage"
-                      name="contactMessage"
-                    ></textarea>
-                  </div>
+                <div>
+                  <label htmlFor="contactMessage">
+                    Message <span className="required">*</span>
+                  </label>
+                  <textarea
+                    cols="50"
+                    rows="2"
+                    id="contactMessage"
+                    name="contactMessage"
+                  ></textarea>
+                </div>
 
-                  <div>
-                    <button className="submit">Submit</button>
-                    <span id="image-loader">
-                      <img src="images/loader.gif" alt="" />
-                    </span>
-                  </div>
-                </fieldset>
-              </form>
+                <div>
+                  <button className="submit">Submit</button>
+                  <span id="image-loader">
+                    <img src="images/loader.gif" alt="" />
+                  </span>
+                </div>
+              </fieldset>
+            </form>
 
-              <div id="message-warning">Error boy</div>
-              <div id="message-succes">
-                <i className="fa fa-check"></i>Your Message was sent, thank you!
-                <br />
-              </div>
+            <div id="message-warning">Error boy</div>
+            <div id="message-succes">
+              <i className="fa fa-check"></i>Your Message was sent, thank you!
+              <br />
             </div>
-          </Slide>
+          </div>
 
-          <Slide right duration={1000}>
-            <aside className="four columns footer-widgets">
-              <div className="widget widget_contact">
-                <h4>Address and Phone</h4>
-                <p className="address">
-                  {name}
-                  <br />
-                  {street} <br />
-                  {city}, {state} {zip}
-                  <br />
-                  <span>{phone}</span>
-                </p>
-              </div>
+          <aside className="four columns footer-widgets">
+            <div className="widget widget_contact">
+              <h4>Address and Phone</h4>
+              <p className="address">
+                {name}
+                <br />
+                {street} <br />
+                {city}, {state} {zip}
+                <br />
+                <span>{phone}</span>
+              </p>
+            </div>
 
-              <div className="widget widget_tweets">
-                <h4 className="widget-title">Latest Tweets</h4>
-                <ul id="twitter">
-                  <li>
+            <div className="widget widget_tweets">
+              <h4 className="widget-title">Latest Tweets</h4>
+              <ul id="twitter">
+                <li>
+                  <span>
+                    Saya bahagia kemarin <br />
+                    <a href="./">http://t.co/CGIrdxIlI3</a>
                     <span>
-                      Saya bahagia kemarin <br />
-                      <a href="./">http://t.co/CGIrdxIlI3</a>
-                      <span>
-                        <b>
-                          <a href="./">2 Days Ago</a>
-                        </b>
-                      </span>
+                      <b>
+                        <a href="./">2 Days Ago</a>
+                      </b>
                     </span>
-                  </li>
-                  <li>
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    semoga kamu baik-baik saja yaa!
+                    <br />
+                    <a href="./">http://t.co/CGIrdxIlI3</a>
                     <span>
-                      semoga kamu baik-baik saja yaa!
-                      <br />
-                      <a href="./">http://t.co/CGIrdxIlI3</a>
-                      <span>
-                        <b>
-                          <a href="./">3 Days Ago</a>
-                        </b>
-                      </span>
+                      <b>
+                        <a href="./">3 Days Ago</a>
+                      </b>
                     </span>
-                  </li>
-                </ul>
-              </div>
-            </aside>
-          </Slide>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </aside>
         </div>
       </section>
     );
