@@ -1,0 +1,8 @@
+.banner {
+  background: url(https://media.istockphoto.com/id/1629539671/photo/gleaming-glass-skyscrapers-towering-into-sky-city-of-london-panorama.webp?a=1&b=1&s=612x612&w=0&k=20&c=FdjCRgAzUuNP6FyMfjXGXNCymzpqncxpGG77GDzeQqA=)
+    no-repeat center center;
+  background-size: cover;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  color: #ffffff;
+}
