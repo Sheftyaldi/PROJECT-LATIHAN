@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #d7f7c4;
+    text-align: center;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px auto;
+    width: 250px;
+}
+.menu a {
+    padding: 15px;
+    background: #b5e48c;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.menu a:hover {
+    background: #99d98c;
+}
+footer {
+    margin-top: 30px;
+    color: #555;
+}
